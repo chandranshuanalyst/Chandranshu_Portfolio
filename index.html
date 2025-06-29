@@ -48,9 +48,47 @@
       function renderOverview() {
         document.getElementById('main-content').innerHTML = `
           <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Overview</h2>
-          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-4">
-            ${overviewPoints.map(pt => `<li>${pt}</li>`).join('')}
-          </ul>
+          <section class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Profile Summary</h3>
+            <p class="mb-2 text-gray-700 dark:text-gray-300">
+              Data Scientist and AI professional with a strong background in statistics and credit risk. Experienced in building scalable credit risk models, automating analytics workflows, and leveraging GenAI for business solutions. Adept at end-to-end project delivery, stakeholder management, and cross-functional collaboration.
+            </p>
+          </section>
+          <section class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Experience</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2">
+              <li><strong>Moody's Analytics</strong> – Asst. Risk Consulting Associate (Jul 2023 – Present)
+                <ul class="list-disc ml-6">
+                  <li>Developed credit risk models for 7L+ obligors using Spark & R</li>
+                  <li>Built model risk management solution reducing reporting time by 70%</li>
+                  <li>Automated climate stress testing workflows with 95%+ data accuracy</li>
+                  <li>Created RAG-based LLM chatbot using LangChain + FastAPI</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Projects</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2">
+              <li>Agentic AI Chatbot (LangGraph, memory, RAG logic)</li>
+              <li>Credit Risk Model (ROC-AUC > 0.80)</li>
+              <li>Climate Scenario Generator using GPT and templates</li>
+            </ul>
+          </section>
+          <section class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Certifications</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2">
+              <li>NPTEL - Introduction to LLMs (Top 2%)</li>
+              <li>DeepLearning.AI – Prompting, LangChain, DsPy</li>
+            </ul>
+          </section>
+          <section class="mb-6">
+            <h3 class="text-xl font-bold mb-2">Education</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2">
+              <li>M.Sc. Statistics – Hindu College, DU (Gold Medallist)</li>
+              <li>B.Sc. Statistics – Ramjas College, DU (Course Topper)</li>
+            </ul>
+          </section>
         `;
         document.getElementById('tab-overview').classList.add('bg-blue-600', 'text-white');
         document.getElementById('tab-contact').classList.remove('bg-blue-600', 'text-white');
