@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! This site showcases my work in AI, cre
 
 ## 🔥 Live Site
 
-👉 [https://chandranshu-portfolio.vercel.app](https://chandranshujain.vercel.app) *(Update this with your live link)*
+👉 [https://chandranshu-portfolio.vercel.app](https://chandranshujain.vercel.app)
 
 ---
 
