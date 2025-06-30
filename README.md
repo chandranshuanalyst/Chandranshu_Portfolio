@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! This site showcases my work in AI, cre
 
 ## 🔥 Live Site
 
-👉 [https://chandranshu-portfolio.vercel.app](https://chandranshu-portfolio.vercel.app) *(Update this with your live link)*
+👉 [https://chandranshu-portfolio.vercel.app](https://chandranshujain.vercel.app) *(Update this with your live link)*
 
 ---
 
@@ -19,38 +19,10 @@ Welcome to my personal portfolio website! This site showcases my work in AI, cre
 - **Education** – Academic background
 - **Resume Download** – PDF copy available
 
----
-
-## 🌗 Features
-
-- **Dark/Light Mode Toggle**
-- Mobile responsive
-- Built with [Tailwind CSS](https://tailwindcss.com/)
-- No backend or database — deploys instantly on Vercel or GitHub Pages
-
----
-
-## 🚀 Deployment Options
-
-### ✅ GitHub Pages
-
-1. Push `index.html` to your GitHub repo
-2. Go to `Settings → Pages`
-3. Select `main` branch and `/ (root)`
-4. Your site will be live at: `https://yourusername.github.io/chandranshu-portfolio`
-
-### ✅ Vercel
-
-1. Go to [vercel.com](https://vercel.com) and log in with GitHub
-2. Import this repo
-3. Set framework to **Other**
-4. Deploy! Your site will be live at `https://your-project-name.vercel.app`
-
----
 
 ## 📎 Resume
 
-You can download my resume directly from the site or view it [here](./CHANDRANSHU_JAIN.pdf).
+You can download my resume directly from the site or view it [here](./CHANDRANSHU JAIN.pdf).
 
 ---
 
@@ -70,12 +42,6 @@ I'm a data scientist with a background in statistics and experience in credit ri
 - JavaScript (for theme toggle)
 - Git + GitHub
 - Vercel / GitHub Pages
-
----
-
-## 📸 Screenshot
-
-![Portfolio Preview](screenshot.png)
 
 ---
 
