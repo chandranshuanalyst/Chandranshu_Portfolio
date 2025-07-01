@@ -13,14 +13,19 @@
         <div class="mb-8">
           <h2 class="text-xl font-bold mb-4">Menu</h2>
           <button id="tab-overview" class="w-full text-left py-2 px-3 rounded mb-2 bg-blue-600 text-white hover:bg-blue-700">Overview</button>
+          <button id="tab-techstack" class="w-full text-left py-2 px-3 rounded mb-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600">Technical Stack</button>
           <button id="tab-contact" class="w-full text-left py-2 px-3 rounded bg-gray-200 dark:bg-gray-700 text-black dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600">Contact Me</button>
         </div>
       </aside>
       <!-- Main Content -->
       <div class="flex-1">
         <header class="p-6 text-center border-b border-gray-300 dark:border-gray-700">
-          <h1 class="text-4xl font-bold">Chandranshu Jain</h1>
-          <p class="text-gray-500 dark:text-gray-400">AI & Risk Analyst | Credit Risk | GenAI | Data Science</p>
+          <div class="flex flex-col items-center justify-center">
+            <img src="https://raw.githubusercontent.com/<your-github-username>/<your-repo>/main/my%20photo.jpg" alt="Chandranshu Jain Photo" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-blue-600 shadow-lg" id="profile-photo" />
+            <h1 class="text-4xl font-bold">Chandranshu Jain</h1>
+            <p class="text-gray-500 dark:text-gray-400">AI & Risk Analyst | Credit Risk | GenAI | Data Science</p>
+            <a href="Chandranshu Jain.pdf" download class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 flex items-center gap-2"><svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4' /></svg>Download Resume</a>
+          </div>
         </header>
         <main id="main-content" class="p-6 max-w-4xl mx-auto"></main>
         <footer class="text-center text-gray-500 text-sm py-4 border-t border-gray-300 dark:border-gray-700 mt-8">
@@ -99,7 +104,7 @@
           <section class="mb-6">
             <h3 class="text-xl font-bold mb-2">Projects</h3>
             <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-2">
-              <li>MultiPDF RAG ChatBot using Langchain, Groq and Streamlit deployed on HuggingFace.</li>
+              <li>MultipPDF RAG ChatBot using Langchain, Groq and Streamlit deployed on HuggingFace.</li>
               <li>Built agentic LLM Chatbot using LangGraph with memory, tools, and decision logic deployed via FastAPI + Streamlit enabling real-time, general customer inquiries (like live weather updates or account questions) with 70%+ accuracy and scalable conversations.</li>
             </ul>
           </section>
@@ -128,6 +133,7 @@
         `;
         document.getElementById('tab-overview').classList.add('bg-blue-600', 'text-white');
         document.getElementById('tab-contact').classList.remove('bg-blue-600', 'text-white');
+        document.getElementById('tab-techstack').classList.remove('bg-blue-600', 'text-white');
       }
       function renderContact() {
         document.getElementById('main-content').innerHTML = `
@@ -141,8 +147,26 @@
         `;
         document.getElementById('tab-contact').classList.add('bg-blue-600', 'text-white');
         document.getElementById('tab-overview').classList.remove('bg-blue-600', 'text-white');
+        document.getElementById('tab-techstack').classList.remove('bg-blue-600', 'text-white');
+      }
+      function renderTechStack() {
+        document.getElementById('main-content').innerHTML = `
+          <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Technical Stack</h2>
+          <div class="flex flex-wrap gap-8 items-center justify-center mt-6">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16" title="Python" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" class="w-16 h-16" title="R" />
+            <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rshiny.png" alt="R Shiny" class="w-16 h-16" title="R Shiny" />
+            <img src="https://raw.githubusercontent.com/hwchase17/langchain/master/docs/static/img/logo.png" alt="LangChain" class="w-16 h-16" title="LangChain" />
+            <img src="https://raw.githubusercontent.com/CrewAI/crewai/main/docs/static/img/logo.png" alt="CrewAI" class="w-16 h-16" title="CrewAI" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-16 h-16" title="PostgreSQL" />
+          </div>
+        `;
+        document.getElementById('tab-techstack').classList.add('bg-blue-600', 'text-white');
+        document.getElementById('tab-overview').classList.remove('bg-blue-600', 'text-white');
+        document.getElementById('tab-contact').classList.remove('bg-blue-600', 'text-white');
       }
       document.getElementById('tab-overview').onclick = renderOverview;
+      document.getElementById('tab-techstack').onclick = renderTechStack;
       document.getElementById('tab-contact').onclick = renderContact;
       // Default to overview
       renderOverview();
